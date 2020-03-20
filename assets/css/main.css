@@ -3,21 +3,87 @@ body{
    
     font-family: "Open Sans", arial, sans-serif;
 }
-.bg-defaultimg{
-    width: 100%;
-    height: 100%;
 
+
+.item{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
-.bg-defaultimg img{
+.item img{
     background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 600px;
     opacity: 1;
     visibility: inherit;
+    bottom: 50px;
 }
+
+@-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+.owl-theme .owl-nav {
+    font-size: 40px;
+    position: absolute;
+    top: 45%;
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    margin-top: 0;
+}
+
+.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background: #00000091;
+    margin: 5px 3px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #ffffff;
+
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    padding: 25px 10px!important;
+    background: #11111140;
+    border-radius: 0%;
+    margin: 0;
+    color: rgba(255,255,255, .9);
+
+}
+
 .about-head{
     display: flex;
     text-align: center;
@@ -238,7 +304,7 @@ body{
 .tab-details{
     display: flex;
     justify-content: center;
-    color: #7777;
+    color: #777;
     padding: 30px 0 30px 0;
 }
 .tab-det1 p{
@@ -258,11 +324,14 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
 
+    
+}.tab-det1 footer::before{
+    content: '\2014 \00A0';
+
 }
 .tab-det2{
     font-size: 15px;
     font-weight: 300;
-    color: #777;
     line-height: 1.7;
 }
 .tab-det1{
@@ -298,8 +367,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 50em;
     width: 100%;
+    padding: 0px 0 35px 0;
 }
 
 .parallax{
@@ -322,6 +391,8 @@ body{
     font-weight: 300;
     letter-spacing: 0.3em;
     line-height: 1.5;
+    color: rgba(255,255,255, .9);
+    
 }
 
 .disc p{
@@ -345,4 +416,509 @@ body{
     font-size: 12px;
     text-decoration: none;
     letter-spacing: 0.2em;
+    transition: 0.5s;
 }
+
+.btn:hover{
+    background-color: #ffffff;
+}
+.cointainer4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 140px 0;
+    margin: 0 89.5px 0 89.5px;
+    font-family: 'Dosis', arial, sans-serif;
+    letter-spacing: 0.2em;
+}
+.cointainer4 .work{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Dosis', arial, sans-serif;
+   
+
+}
+.work .alt-features-item .alt-features-descr h4{
+    margin-bottom: 1.3em;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 18px;
+    
+
+}
+.work .alt-features-item .alt-features-descr p{
+    font-family: "Open Sans", arial, sans-serif;
+    letter-spacing: 0;
+}
+
+
+.work .alt-features-item .alt-features-descr {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.86;
+    text-align: left;
+   
+}
+.work .alt-features-item{
+    text-align: center;
+}
+.work .alt-features-item .alt-features-icon {
+    padding-top: 10px;
+    font-size: 48px;
+    line-height: 1.3;
+    color: #111;
+    
+}
+.work .alt-features-item  .alt-features-title {
+    margin-bottom: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+.container5{
+    padding: 140px 0 0 0 ;
+}
+.lat-work{
+    text-align: center;
+}
+.lat-work h2{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    line-height: 1.4;
+    font-family: 'Dosis', arial, sans-serif;
+    margin: 20px 0 70px 0;
+}
+.lat-work p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.7;
+    padding: 0 302.5px 0 302.5px;
+    margin-bottom: 70px;
+}
+.lat-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.workimg{
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    line-height: 0;
+    position: relative;
+    text-align: center;
+}
+.workimg img{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.workimg .lbg{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250,250,250, .9);
+    opacity:0;
+    transition: 0.5s;
+}
+
+.workimg .lbg:hover{
+    opacity:1;
+}
+
+.workimg .lbg:hover img{
+    transform: scale(1.06);
+}
+.workimg .ltext{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width:100%;
+    opacity:0;
+}
+.bg-dark {
+    background-color: #111;
+    width: 100%;
+    padding: 70px 0;
+}
+.banner-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.9);
+    font-family: 'Dosis', arial, sans-serif;
+}
+.crelative{
+    text-align: center;
+}
+.local-scroll{
+    text-transform: uppercase;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-choose .section-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    line-height: 1.4;
+    font-family: 'Dosis', arial, sans-serif;
+}
+.why-choose .row .alt-features-item {
+    margin-top: 70px;
+    text-align: center;
+}
+.why-choose .row .alt-features-item .alt-features-icon {
+    padding-top: 10px;
+    font-size: 48px;
+    line-height: 1.3;
+    color: #111;
+}
+.why-choose .row .alt-features-item .alt-features-title {
+    margin-bottom: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-family: 'Dosis', arial, sans-serif;
+}
+.why-choose .row .alt-features-item .alt-features-descr {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.86;
+    text-align: left;
+  
+  
+   
+}
+.why-choose{
+ 
+    padding: 140px 15px;
+}
+.row{
+    margin-right: 89.5px;
+    margin-left: 89.5px;
+}
+.choose-det{
+   width: 100%;
+   
+}
+.why-choose .row .alt-features-item {
+    padding: 0 13px;
+}
+.container6{
+    background-image: url(../images/section-bg-3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.parallax2{
+    top:0; 
+    position: relative;
+    display:flex;
+    align-items:center;
+    margin:0 auto;
+    width: 1170px;
+    color: rgba(255,255,255, .7);
+}
+
+.owl-slide2 .item{
+    text-align: center;
+    height: auto;
+    padding-top:140px;
+    padding-bottom: 140px;
+    background: rgba(3,3,3, .9);
+    color: rgba(255,255,255, .9);
+    width:100%;
+}
+.owl-slide2 .item .item-text{
+    width: 57%;
+    margin: 0 auto;
+    
+}
+.owl-slide2 .item .item-text span{
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1;
+}
+.owl-slide2 .item .item-text h3{
+    padding: 0;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    font-family: 'Dosis', arial, sans-serif;
+}
+.owl-slide2 .item .item-text p{
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+   
+  }
+  .owl-slide2 .item .item-text footer:before{
+     content: '\2014 \00A0';
+}
+      
+  
+  .owl-slide2 .item .item-text footer {
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7777;
+}
+
+.owl-slide2{
+    overflow: hidden;
+}
+
+.owl-slide2 .owl-dots .owl-dot span{
+    background: #869791;
+    margin: 5px 4px;
+    width: 6px;
+    height: 6px;
+}
+
+.owl-slide2 .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: transparent;
+    bordeR: 1px solid rgba(255,255,255, .8);
+
+}
+
+.owl-slide2 .owl-nav {
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 0;
+}
+
+.owl-slide2 .owl-nav button.owl-next, .owl-slide2 .owl-nav button.owl-prev{
+    padding: 20px 30px!important;
+    background: #ffffff;
+    border-radius: 0%;
+    margin: 0;
+    color: #000;
+    transform: rotate(45deg);
+
+}
+
+.owl-slide2 .owl-nav button.owl-next span, .owl-slide2 .owl-nav button.owl-prev span{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); 
+   -moz-transform: rotate(-45deg);    
+   display: block;
+}
+
+.owl-slide2 .owl-nav button.owl-prev span{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+
+.owl-slide2 .owl-nav button.owl-next span{
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+
+.owl-slide2 .owl-nav button.owl-next{
+    right: -33px;
+    position: relative;
+}
+
+.owl-slide2 .owl-nav button.owl-prev{
+    left: -33px;
+    position: relative;
+}
+.ecart{
+   
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ecart .bestsell{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Dosis', arial, sans-serif;
+    margin-bottom: 70px;
+
+}
+.ecart .bestsell h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    line-height: 1.4;
+    margin:0;
+}
+.ecart .bestsell a{
+    margin-top: 7px;
+    color: #999;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    text-decoration: none;
+}
+.ecart .bestsell a i{
+    font-size: 12px;
+}
+.container7{
+    padding:140px 0;
+    width: 86.73%;
+    margin: 0 auto;
+}
+.bestcart{
+    display: flex;
+    justify-content: center;
+}
+.bestcart .showcase .show-img img{
+    width: 100%;
+    
+}
+.bestcart .showcase{
+    margin: 0 15px;
+}
+.bestcart .showcase .showimg-abt{
+    text-align: center;
+}
+.bestcart .showcase .showimg-abt .sabt1{
+    margin-bottom: 6px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #777;
+  font-family: 'Dosis', arial, sans-serif ;
+  text-align: center;
+  width: 91%;
+  line-height: 1.8;
+}
+.bestcart .showcase .showimg-abt .sabt2{
+    margin-bottom: 22px;
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.bestcart .showcase .showimg-abt .btn{
+    color: #777;
+    background: #e5e5e5;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 4px 13px;
+}
+.bestcart .showcase .showimg-abt .btn:hover{
+    color: #444;
+    background: #d5d5d5;
+        
+}
+.show-img{
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    line-height: 0;
+    position: relative;
+    text-align: center;
+}
+
+
+.show-img .wh-bg{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250,250,250, .9);
+    opacity:0;
+    transition: 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.show-img .wh-bg:hover{
+    opacity:0.20 ;
+}
+.showcase .sale{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.showcase .sale .bg-red{
+    background-color: #e13939 ;
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 80%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.container8 .awes{
+    display: flex;
+    justify-content: center;
+
+}
+.awes .awes-temp h3{
+    font-family: 'Dosis', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.awes .awes-temp p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #5f5f5f;
+    line-height: 1.8;
+}
+.awes .awes-temp .btn{
+    text-transform: uppercase;
+    border:2px solid #151515;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 10px 39px;
+    transition: 0.5 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.awes .awes-temp .btn:hover{
+    color: #fff;
+    background-color: #151515;
+}
+
+
+
