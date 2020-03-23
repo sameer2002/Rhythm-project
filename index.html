@@ -1,10 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>Your Font/Glyphs</title>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sameer</title>
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">   
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
@@ -311,37 +310,34 @@
                 <div class="workimg">
                     
                     <img src="./assets/images/projects-13.jpg" alt="">
-                    <div class="lbg"></div>
-                    <div class="ltext">
-                        <h4>MAN</h4>
-                        <h5>EXTERNAL PAGE</h5>
+                    <div class="lbg">
+                        <div class="ltext">
+                            <h4>MAN</h4>
+                            <h5>EXTERNAL PAGE</h5>
+                        </div>
                     </div>
- 
-
                 </div>
                 <div class="workimg">
                     <img src="./assets/images/projects-14.jpg" alt="">
-                    <div class="lbg"></div>
-                    <div class="ltext">
-                        <h4>WOMAN</h4>
-                        <h5>EXTERNAL PAGE</h5>
+                    <div class="lbg">
+                        <div class="ltext">
+                            <h4>WOMAN</h4>
+                            <h5>EXTERNAL PAGE</h5>
+                        </div>
                     </div>
-
                 </div>
                 <div class="workimg">
                     <img src="./assets/images/projects-6.jpg" alt="">
-                    <div class="lbg"></div>
-                    <div class="ltext">
-                        <h4>MAN WITH BAG</h4>
-                        <h5>EXTERNAL PAGE</h5>
+                    <div class="lbg">
+                        <div class="ltext">
+                            <h4>MAN WITH BAG</h4>
+                            <h5>EXTERNAL PAGE</h5>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="bg-dark">
                 <div class="crelative">
-                    
-                    
                         <h3 class="banner-heading ">Want to see more works?</h3>
                         <div class="local-scroll">
                             <a href="" class="btn btn-mod btn-w btn-medium btn-round">Lets view portfolio</a>
@@ -928,7 +924,7 @@
                 </div>
             </div>
         </div>
-        <div class="containera5">
+        <footer class="containera5">
             <div class="logo2">
                 <img src="./assets/images/logo-footer.png" alt="">
             </div>
@@ -958,6 +954,25 @@
                     Made with love for great people.
                 </div>
             </div>
+        </footer>
+
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./assets/images/logo-white.png" alt="">
+            </div>
+            <ul class="menu">
+                <li id="active" >Home <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li>Pages <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li>ELEMENTS <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li>portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li>blog <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li>shop <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <div class="element">
+                    <li><i class="fa fa-search" aria-hidden="true"></i> search</li>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i> cart(0)</li>
+                    <li>eng <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                </div>            
+            </ul>
         </div>
                
     </div>
@@ -971,7 +986,7 @@
             nav:true,
             dots:true,
             startPosition:0,
-            
+            autoplay:true,
             animateOut:'fadeOut',
             autoplayTimeout:10000,
             autoplayHoverPause:true,
@@ -1027,6 +1042,32 @@
             }
         })
         
+        //nav bg color
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 150){
+                    $(".nav-bar").css({"background-color":"#111"});   
+                }
+                else{
+                    $(".nav-bar").css({"background-color":"transparent"});
+                }
+            })
+        })
+
+        var x =document.querySelector('.owl-slide1 .active')
+        var n =document.querySelector('.owl-slide1 .owl-nav button.owl-next')
+        var p =document.querySelector('.owl-slide1 .owl-nav button.oel-prev')
+
+
+        
+        /* n.addEventListener("mouseover", function() {
+            n.style.backgroundImage = "url(./assets/images/section-bg-20.jpg)";
+        }, false);
+        n.addEventListener("mouseout", function() {
+            n.style.backgroundImage = "";
+        }, false); */
+        
+
     </script>
 </body>
 </html>
