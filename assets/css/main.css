@@ -476,7 +476,7 @@ font-weight: 400;
     margin: 20px 0 70px 0;
 
 }    
-.cointainer3{
+.container3{
     padding: 140px 0;
     width: 86.73%;
     margin: 0 auto;
@@ -609,7 +609,7 @@ font-weight: 400;
 .btn:hover{
     background-color: #ffffff;
 }
-.cointainer4{
+.container4{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -619,7 +619,7 @@ font-weight: 400;
     font-family: 'Dosis', arial, sans-serif;
     letter-spacing: 0.2em;
 }
-.cointainer4 .work{
+.container4 .work{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -1523,7 +1523,7 @@ margin-bottom: 5px;
 
 
 /*Media screen*/
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
     .owl-slide1 .owl-nav button.owl-next, .owl-slide1 .owl-nav button.owl-prev {
         padding: 18px 6px!important;
     }  
@@ -1653,21 +1653,21 @@ margin-bottom: 5px;
      .paracont {
         padding: 0;
      }
-     .cointainer3{
+     .container3{
         padding: 80px 0;
         width:100%;
      }
 
-    .cointainer3 .serv-icon ul{
+    .container3 .serv-icon ul{
         padding: 30px 20px;
     }
 
-     .cointainer4{
+     .container4{
         display: block;
         padding: 80px 0;
         width: 91.73%;
      }
-     .cointainer4 .work{
+     .container4 .work{
         padding: 0;
      }
      .lat-work p {

@@ -23,6 +23,7 @@ $('#owl-slide1').owlCarousel({
     }
 })
 
+
 $('#owl-slide2,#owl-slide3').owlCarousel({
     loop:true,
     nav:true,
@@ -142,3 +143,4 @@ function openNav() {
         slider.style.opacity="0";
     }
 }
+
